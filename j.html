@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register here</title>
+    <link href="j.css" rel="stylesheet">
+</head>
+<body>
+   
+       
+    <div class="main">
+        <div class="Register">
+            <h2>Register here</h2>
+            
+                <nav>
+                <div class="input">
+                <label>First Name: </label>
+                <br>
+               
+                <input type="text" name="fname" id="name" placeholder="enter your first name">
+                <br><br>
+                <label>Last Name: </label>
+                <br>
+                <input type="text" name="lname" id="name" placeholder="enter your last name">
+                <br><br>
+                <label>Email: </label>
+                <br>
+                <input type="email" name="email" id="name" placeholder="enter your valid email">
+                <br><br>
+                <label>Gender</label>
+                &nbsp;&nbsp;&nbsp;
+                <input type="radio" name="gender" id="male">
+                &nbsp;
+                <span id="male">Male</span>
+                &nbsp;&nbsp;&nbsp;
+                <input type="radio" name="gender" id="female">
+                &nbsp;
+                <Span id="female">Female</span>
+                </nav>
+                <a href="login.html">
+                    <button class="button">submit</button>
+                </a>
+            </div>
+        
+           
+              
+        
+           
+        </div>
+    </div>
+    
+</body>
+<script>
+    let input = document.querySelector(".input");
+    let button = document.querySelector(".button");
+    button.disabled = true;
+    input.addEventListener("change", stateHandle);
+    
+    function stateHandle() {
+        if(document.querySelector(".input").value === "") {
+            button.disabled = true;
+        } else {
+            button.disabled = false;
+        }
+    }
+    </script>
+    
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Room Finder</title>
+  <link rel="stylesheet" href="styles.css">
+ 
+</head>
+<body>
+  <header>
+    <h1>Student Room Finder</h1>
+  </header>
+  <main>
+    <section>
+      <h2>Search for Available Rooms</h2>
+      <form>
+        
+        <label for="budget">Budget:</label>
+        <input type="number" id="budgetInput" name="budget" placeholder="Enter budget">
+        <form id="inputForm">
+          <label for="locationInput">Enter Specific Location:</label>
+          <input type="text" id="locationInput" name="locationInput" placeholder="Enter Location"><br><br>
+          
+        </form>
+        <script>
+          function windowopen(){
+              window .open("https://www.magicbricks.com/property-for-sale-rent-in-Bilaspur/pg-hostels-Bilaspur")
+          }
+      </script>
+      <body>
+          <button onclick="windowopen()">click me</button>
+      </body>
+        
+       
+  
+      </form>
+      
+        
+    </section>
+    <section id="results">
+      
+    </section>
+    <script src="o.js"></script>
+  </main>
+  <footer>
+    <p>&copy; 2024 Student Room Finder</p>
+  </footer>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script> 
+
+  
+</body>
+<script>
+    let input = document.querySelector(".input");
+    let button = document.querySelector(".button");
+    button.disabled = true;
+    input.addEventListener("change", stateHandle);
+    
+    function stateHandle() {
+        if(document.querySelector(".input").value === "") {
+            button.disabled = true;
+        } else {
+            button.disabled = false;
+        }
+    }
+    document.getElementById("inputForm").addEventListener("submit", function windowopen(event) {
+          event.preventDefault(); 
+        
+          
+          var location = document.getElementById("locationInput").value;
+           window.location.href = "https://www.magicbricks.com/pg-in-bilaspur-pppfr=" + encodeURIComponent(location);
+
+           var budgetInput = document.getElementById("budgetInput").value;
+        
+        window.budget.href = "https://www.magicbricks.com/pg-in-bilaspur-pppfr=" + encodeURIComponent(budget);
+        });
+    </script>
+</html>

@@ -1,0 +1,59 @@
+<html>
+    <link href="login.css" rel="stylesheet">
+
+<body>
+   
+       
+    <h2><span>Hello</span> ! students, Let's study together</h2>
+     
+    <div class="login-box">
+    <div class="input">
+   
+        
+            <h2>login</h2>
+            <div class="input-box">
+
+                <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                <input type="email" required>
+                <label>Email</label>
+            </div>
+            <div class="input-box">
+                <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                <input type="password" required>
+                <label>password</label>
+            </div>
+            <div class="remember-forgot">
+                 
+                <label><input type="checkbox" >remember me  </label>
+                <a href="">Forget Password</a>
+            </div>
+         
+                <a href="code.html">
+                    <button class="button">login</button>
+                </a>
+            <div class="resister-list"></div>
+           <p>Don't have an account?<a href="j.html">Register</a></p>
+           
+        </div>
+           
+                
+       
+   
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script> 
+</body>
+<script>
+    let input = document.querySelector(".input");
+    let button = document.querySelector(".button");
+    button.disabled = true;
+    input.addEventListener("change", stateHandle);
+    
+    function stateHandle() {
+        if(document.querySelector(".input").value === "") {
+            button.disabled = true;
+        } else {
+            button.disabled = false;
+        }
+    }
+    </script>
+</html>
